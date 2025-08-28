@@ -1,0 +1,58 @@
+﻿#basicTable {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    margin-top: 1rem;
+    overflow: auto;
+    max-height: 500px;
+    width: 99%;
+}
+
+.handsontable .htUIInput.htUIButton input {
+    height: 24px;
+}
+
+.htUIMultipleSelectHot.handsontable.htHasScrollY {
+    height: 160px !important;
+}
+
+.htUIMultipleSelect .ht_master .wtHolder {
+    height: 160px !important;
+}
+
+.handsontable .htCore {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.handsontable td, .handsontable th {
+    border: 1px solid #dee2e6 !important;
+    padding: 7px !important;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 22px;
+}
+
+.htCenter {
+    text-align: center;
+}
+
+.htMiddle {
+    vertical-align: middle;
+}
+
+.handsontable th, .handsontable td {
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+.ht_clone_top th {
+    height: auto !important;
+}
+
+.ht_master:not(.innerBorderInlineStart):not(.emptyColumns) ~ .handsontable:not(.ht_clone_top):not(.htGhostTable) thead tr th:first-child {
+    height: auto !important;
+}
+
+.handsontable div, .handsontable input, .handsontable table, .handsontable tbody, .handsontable td, .handsontable textarea, .handsontable th, .handsontable thead {
+    -webkit-box-sizing: border-box !important;
+}

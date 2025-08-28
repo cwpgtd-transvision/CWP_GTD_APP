@@ -1,0 +1,38 @@
+﻿.custom-ui-highcharts  {
+    font-family: var(--body-font-family);
+    color: #333;
+}
+
+.custom-ui-highcharts .card-header {
+    background-color: #eee;
+}
+
+.custom-ui-highcharts .highcharts-data-table {
+    margin-bottom: 20px;
+}
+    .custom-ui-highcharts .highcharts-data-table:focus,
+    .custom-ui-highcharts *:focus * {
+        outline: none;
+        border: none;
+    }
+.custom-ui-highcharts .highcharts-data-table table {
+    width: 100%;
+    border: 1px solid #000;
+}
+.custom-ui-highcharts .highcharts-data-table thead th {
+    background-color: #eee;
+    padding: 3px;
+    border: 1px solid #333;
+}
+.custom-ui-highcharts .highcharts-data-table td,
+.custom-ui-highcharts .highcharts-data-table th {
+    padding: 3px;
+    border: 1px solid #eee;
+}
+
+.highcharts-data-table:focus-visible,
+.highcharts-data-table:focus-visible table,
+.highcharts-data-table table:focus-visible {
+    border: none;
+    outline: none;
+}

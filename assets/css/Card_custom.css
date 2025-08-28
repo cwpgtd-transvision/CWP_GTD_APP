@@ -1,0 +1,20 @@
+﻿
+
+
+
+
+/* Card_custom.css */
+.card {
+    margin-top: 1rem; /* Add top space */
+    background-color: #ffffff; /* Light background for the card */
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 0.375rem; /* Rounded corners */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Soft shadow */
+}
+
+.card-header {
+    background-color: #343a40; /* Dark background for the header */
+    color: #ffffff; /* White text color */
+    padding: 0.75rem 1.25rem; /* Padding for the header */
+    border-bottom: 1px solid #dee2e6; /* Subtle border at the bottom */
+}

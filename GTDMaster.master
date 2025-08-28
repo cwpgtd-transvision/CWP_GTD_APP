@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GTDMaster.master.cs" Inherits="GTDMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>G-T-D</title>
+    <%--Add Here Links And Folder Referance For Application Which We want to Use for All Application Features--%>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- /global stylesheets -->
+    <link href="/assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+    <link href="/assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+    <link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+    <script src="/assets/js/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Core JS files -->
+    <script src="/assets/demo/demo_configurator.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+     
+
+    <script src="/assets/js/app.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+<%--    <script src="/assets/js/vendor/visualization/d3/d3.min.js"></script>
+    <script src="/assets/js/vendor/visualization/d3/d3_tooltip.js"></script>--%>
+    <%--  <script src="assets/demo/pages/dashboard.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/streamgraph.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/sparklines.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/lines.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/areas.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/donuts.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/bars.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/progress.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/heatmaps.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/pies.js"></script>
+    <script src="assets/demo/charts/pages/dashboard/bullets.js"></script>--%>
+
+
+
+
+
+
+    <!-- /theme JS files -->
+    <!-- /highcharts -->
+    <link href="/assets/css/custom-highcharts.css" rel="stylesheet" />
+
+    <!-- Load the core Highcharts library -->
+    <script src="/lib/highcharts/highcharts.js"></script>
+    <script src="/lib/highcharts/highcharts-more.js"></script>
+    <script src="/lib/highcharts/highcharts-3d.js"></script>
+    <script src="/lib/highcharts/modules/drilldown.js"></script>
+    <script src="/lib/highcharts/modules/cylinder.js"></script>
+    <script src="/lib/highcharts/modules/exporting.js"></script>
+    <script src="/lib/highcharts/modules/export-data.js"></script>
+    <script src="/lib/highcharts/modules/accessibility.js"></script>
+    <script src="/assets/js/custom-highcharts.js"></script>
+
+    <!-- jQuery -->
+    <!-- Handsontable -->
+    <link href="/lib/handsontable/handsontable.full.min.css" rel="stylesheet" />
+    <script src="/lib/handsontable/handsontable.full.min.js"></script>
+
+    <!-- Export Libraries -->
+    <script src="/assets/js/xlsx.full.min.js"></script>
+    <script src="/assets/js/jspdf.umd.min.js"></script>
+    <!-- Optional Icons -->
+    <%--<link href="lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />--%>
+
+    <link href="/assets/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/exceljs.min.js"></script>
+    <script src="/assets/js/FileSaver.min.js"></script>
+
+    <link href="/assets/css/custom-handsontable.css" rel="stylesheet" />
+    <script src="/assets/js/custom-handsontable.js"></script>
+
+    <%--HTTPS links for Referance--%>
+
+    <script src="../../../assets/js/vendor/notifications/sweet_alert.min.js"></script>
+    <script src="../../../assets/js/vendor/forms/selects/select2.min.js"></script>
+    <script src="../../../assets/js/vendor/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="../../../assets/js/vendor/tables/datatables/datatables.min.js"></script>
+    <script src="../../../assets/js/vendor/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+    <script src="../../../assets/js/vendor/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+    <script src="../../../assets/js/vendor/tables/datatables/extensions/buttons.min.js"></script>
+    <script src="../../../assets/js/vendor/pickers/daterangepicker.js"></script>
+    <script src="../../../assets/js/vendor/pickers/datepicker.min.js"></script>
+    <script src="../../../assets/demo/pages/picker_date.js"></script>
+
+     <%--<link href="/assets/css/Card_custom.css" rel="stylesheet" />--%>
+    <script src="/assets/js/SweetAlert_Methods.js"></script>
+
+    <script src="/assets/demo/pages/form_select2.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <%--Master Page For All Form Parent Form Including Menu SubMenu Hearder And Footers Add Here--%>
+    <% Server.Execute("~/templates/header/Navbar.aspx"); %>
+    <div class="page-content">
+
+        <% Server.Execute("/templates/sidebar/SideBar.aspx"); %>
+        <form id="MasterForm" runat="server" class="custom-form">
+            <div class="content-wrapper">
+			    <!-- Inner content -->
+			    <div class="content-inner">
+                
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                    <%--<% Server.Execute("/templates/footer/Footer.aspx"); %>--%>
+
+                </div>
+                <!-- Inner content -->
+                <div class="btn-to-top"><button class="btn btn-secondary btn-icon rounded-pill" type="button"><i class="ph-arrow-up"></i></button></div>
+            </div>
+        </form>
+    </div>
+    <% Server.Execute("/templates/Notifications.aspx"); %>
+    <% Server.Execute("/templates/DemoConfig.aspx"); %>
+    <!-- NEED TO KEEPT CUSTOM.JS BELOW ONLY ELSE CLOCK IS NOT LOADING	 -->
+    <script src="/assets/js/custom.js" rel="stylesheet"></script>
+   
+</body>
+</html>

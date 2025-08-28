@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "highcharts@12.3.0",
+      "destination": "lib/highcharts/"
+    }
+  ,
+{
+  "provider": "cdnjs",
+  "library": "handsontable@15.3.0",
+  "destination": "lib/handsontable/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "jquery-handsontable@0.10.2",
+  "destination": "lib/jquery-handsontable/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "bootstrap-icons@1.13.1",
+  "destination": "lib/bootstrap-icons/"
+}
+]
+}
